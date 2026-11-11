@@ -1,0 +1,181 @@
+
+/* General page styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1c1c1e;
+    color: #f5f5f7;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: #2c2c2e;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+header h3 {
+    color: #a1a1a6;
+    font-weight: normal;
+}
+
+nav {
+    margin-top: 25px;
+}
+
+nav a {
+    color: #f5f5f7;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #0a84ff;
+}
+
+section {
+    background-color: #2c2c2e;
+    margin: 25px auto;
+    padding: 25px;
+    width: 85%;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    color: #f5f5f7;
+    border-bottom: 2px solid #48484a;
+    padding-bottom: 10px;
+}
+
+p {
+    color: #d1d1d6;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+ul {
+    color: #d1d1d6;
+    line-height: 2;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    color: #f5f5f7;
+}
+
+thead {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+th {
+    background-color: #48484a;
+    color: white;
+    padding: 14px;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #48484a;
+}
+
+tr:hover {
+    background-color: #3a3a3c;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    color: #f5f5f7;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 95%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 12px;
+    background-color: #3a3a3c;
+    color: white;
+    border: 1px solid #636366;
+    border-radius: 7px;
+    outline: none;
+}
+
+/* Input focus effect */
+input:focus,
+select:focus {
+    border: 1px solid #0a84ff;
+}
+
+/* Radio buttons */
+input[type="radio"] {
+    accent-color: #0a84ff;
+    margin: 10px;
+}
+
+/* Buttons */
+button {
+    background-color: #0a84ff;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    margin-top: 20px;
+    margin-right: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #0066cc;
+}
+
+/* Reset button */
+button[type="reset"] {
+    background-color: #636366;
+}
+
+button[type="reset"]:hover {
+    background-color: #8e8e93;
+}
+
+/* Small screen styling */
+@media screen and (max-width: 600px) {
+    section {
+        width: 90%;
+        padding: 15px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}

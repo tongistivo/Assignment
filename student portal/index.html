@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Student Information Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <header>
+       <h1>Masinde Muliro University</h1>
+       <h3>University of choice</h3>
+
+       <nav>
+           <a href="#home">Home</a>
+           <a href="#about">About</a>
+           <a href="#registration">Registration</a>
+           <a href="#contact">Contact Us</a>
+       </nav>
+   </header>
+
+   <section id="about">
+       <h2>About the portal</h2>
+
+       <p>
+           The MMUST Student Information Portal is your one-stop
+           platform for accessing essential academic and
+           administrative services. Designed to make your university
+           experience smoother, the portal connects you to everything
+           you need — anytime, anywhere.
+       </p>
+
+       <h2>Academic Programmes Offered</h2>
+
+       <ul>
+           <li>BSc. Computer Science</li>
+           <li>Bsc. Information Technology</li>
+           <li>Bsc. Software Engineering</li>
+           <li>Bsc. Data Science</li>
+       </ul>
+   </section>
+
+   <section>
+       <table>
+           <thead>
+               <tr>
+                   <th colspan="5">STUDENT INFORMATION</th>
+               </tr>
+           </thead>
+
+           <tr>
+               <th>Student ID</th>
+               <th>Student Name</th>
+               <th>Registration No.</th>
+               <th>Programme</th>
+               <th>Year of Study</th>
+           </tr>
+
+           <tr>
+               <td>001</td>
+               <td>Alice Wahome</td>
+               <td>Com/01/001-2024</td>
+               <td>Bsc. Data Science</td>
+               <td>II</td>
+           </tr>
+
+           <tr>
+               <td>002</td>
+               <td>John Peter</td>
+               <td>Com/01/901-2014</td>
+               <td>Bsc. Information Technology</td>
+               <td>III</td>
+           </tr>
+
+           <tr>
+               <td>003</td>
+               <td>Callen Ouma</td>
+               <td>Com/01/071-2024</td>
+               <td>Bsc. Data Science</td>
+               <td>II</td>
+           </tr>
+       </table>
+   </section>
+
+   <section id="registration">
+       <h2>Registration Form</h2>
+
+       <form id="registrationForm">
+
+           <label>Full Name:</label>
+           <input type="text" id="fullName"
+                  placeholder="Full Name" required>
+           <br>
+
+           <label>Registration Number:</label>
+           <input type="text" id="regNumber"
+                  placeholder="Registration Number" required>
+           <br>
+
+           <label>Email Address:</label>
+           <input type="email" id="email"
+                  placeholder="Email" required>
+           <br>
+
+           <label>Gender:</label>
+           <input type="radio" name="gender"
+                  value="male" required>Male
+           <br>
+
+           <input type="radio" name="gender"
+                  value="Female">Female
+           <br>
+
+           <label>Academic Programme:</label>
+           <br>
+
+           <select id="programme" required>
+               <option value="">Select Programme</option>
+               <option>BSc. Computer Science</option>
+               <option>Bsc. Information Technology</option>
+               <option>Bsc. Software Engineering</option>
+               <option>Bsc. Data Science</option>
+           </select>
+
+           <br><br>
+
+           <button type="submit">Submit Registration</button>
+           <button type="reset">Reset</button>
+
+       </form>
+
+       <div id="output"></div>
+
+   </section>
+
+   <script src="script.js"></script>
+
+</body>
+</html>
